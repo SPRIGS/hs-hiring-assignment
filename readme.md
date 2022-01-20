@@ -53,7 +53,8 @@ hs upload sprigs-hs-theme sprigs-hs-theme
 
 Go to design-manager in your portal, and lock the theme folder, to avoid accidental editing:
 
-![<img src="./sprigs-hs-theme/images/lock-theme-folder.gif" width="220">](lock-theme-folder.gif)
+[<img src="./sprigs-hs-theme/images/lock-theme-folder.gif" width="220">](lock-theme-folder.gif)
+
 
 ## Development
 
@@ -62,10 +63,9 @@ Before you begin, using the following tools will make your life much easier:
 - [HubSpot VS Code Extension](https://marketplace.visualstudio.com/items?itemName=HubSpot.hubl)
 
 Once youre ready to start developing, you can run the command ```npm run watch``` which does two things:
-- Watches for SCSS changes on theme files, and compiles them in the same directory.
-- Uploads the changes to the portal (runs `hs watch sprigs-hs-theme sprigs-hs-theme` on the background)
+1. Watches for SCSS changes on theme files, and compiles them in the same directory.
+2. Listens for changes and uploads them to the portal (runs `hs watch sprigs-hs-theme sprigs-hs-theme` on the background)
 
-### Assignment:
 In the modules directory `/sprigs-hs-theme/modules` you will find the following modules:
 - CTA banner
 - Divider
