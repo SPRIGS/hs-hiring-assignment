@@ -24,12 +24,13 @@ Install dependencies
 npm install
 ```
 
-Link the current project with your SandBox portal by running
+Make sure youre logged in to the right sandbox portal on your default browser. Then link the current project with your portal by running
 ```
 hs init 
 ```
 and follow the steps there (refer to the getting started document above).
-After this, if everything went well, there should be a `hubspot.config.yml` at the root of the project looking something like this
+
+If everything went well, there should be a `hubspot.config.yml` at the root of the project looking something like this
 ``` yml
 defaultPortal: DEV
 portals:
@@ -49,6 +50,10 @@ Upload the theme to your SandBox portal running the command
 ``` bash
 hs upload sprigs-hs-theme sprigs-hs-theme
 ```
+
+Go to design-manager in your portal, and lock the theme folder, to avoid accidental editing:
+
+![<img src="./sprigs-hs-theme/images/lock-theme-folder.gif" width="220">](lock-theme-folder.gif)
 
 ## Development
 
