@@ -1,0 +1,10 @@
+.module-text-and-image__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+.module-text-and-image__visual img {
+  width: 100%;
+  height: auto;
+}

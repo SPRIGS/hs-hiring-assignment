@@ -1,0 +1,20 @@
+{
+  "name": "sprigs-hs-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "concurrently \"hs watch sprigs-hs-theme sprigs-hs-theme\" \"node scss-watcher.js\" --prefix \"none\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "concurrently": "^7.0.0",
+    "glob": "^7.2.0",
+    "log-timestamp": "^0.3.0",
+    "node-sass": "^7.0.1",
+    "sass": "^1.49.0"
+  }
+}

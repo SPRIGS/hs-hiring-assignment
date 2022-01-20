@@ -1,0 +1,90 @@
+[
+  {
+    "name": "image",
+    "label": "Image",
+    "required": true,
+    "resizable": false,
+    "type": "image",
+    "default": {
+      "src": "https://f.hubspotusercontent-eu1.net/hub/25478612/hubfs/Image.png",
+      "alt": "Image placeholder"
+    }
+  },
+  {
+    "name": "content",
+    "label": "Content",
+    "children": [
+      {
+        "name": "title",
+        "label": "Title",
+        "type": "text",
+        "default": "Text and image module"
+      },
+      {
+        "name": "text",
+        "label": "Text",
+        "type": "richtext",
+        "default": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, consequuntur natus facilis ad placeat a corporis possimus.</p>"
+      },
+      {
+        "id": "show_button",
+        "name": "show_button",
+        "label": "Show button?",
+        "type": "boolean",
+        "default": true
+      },
+      {
+        "name": "button",
+        "visibility": {
+          "controlling_field": "show_button",
+          "operator": "EQUAL",
+          "controlling_value_regex": "true"
+        },
+        "label": "Button",
+        "children": [
+          {
+            "name": "text",
+            "label": "Text",
+            "type": "text",
+            "default": "Get to know us"
+          },
+          {
+            "name": "link",
+            "label": "Link",
+            "type": "link",
+            "default": {
+              "url": {
+                "type": "EXTERNAL",
+                "href": "https://sprigs.eu"
+              }
+            }
+          }
+        ],
+        "type": "group",
+        "default": {
+          "text": "Get to know us",
+          "link": {
+            "url": {
+              "type": "EXTERNAL",
+              "href": "https://sprigs.eu"
+            }
+          }
+        }
+      }
+    ],
+    "type": "group",
+    "default": {
+      "title": "Text and image module",
+      "text": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, consequuntur natus facilis ad placeat a corporis possimus.</p>",
+      "button": {
+        "text": "Get to know us",
+        "link": {
+          "url": {
+            "type": "EXTERNAL",
+            "href": "https://sprigs.eu"
+          }
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "label": "Page links",
+  "global": false,
+  "host_template_types": ["PAGE"],
+  "icon": "../../images/module-icons/module-icon.svg",
+  "is_available_for_new_content": true
+}
