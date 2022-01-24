@@ -1,36 +1,43 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: Home
-  screenshotPath: ../images/template-previews/home.png
+  label: Homes
 -->
 {% extends "./layouts/base.html" %}
 
 {% block body %}
   {% widget_container "body_modules" label="Page Modules" %}
     
-  {% widget_block module "site-navigation" path="./../modules/site-navigation" %}{% end_widget_block %}    
+  {% widget_block module "site-navigation" path="./../modules/site-navigation" %}
+  {% end_widget_block %}    
   
-  {% widget_block module "text-and-image" path="./../modules/text-and-image" %}{% end_widget_block %
+  {% widget_block module "text-and-image" path="./../modules/text-and-image" %}
+  {% end_widget_block %}
     
-  {% widget_block module "main-banner" path="./../modules/main-banner" %}{% end_widget_block %}
+  {% widget_block module "main-banner" path="./../modules/main-banner" %}
+  {% end_widget_block %}
   
-  {% widget_block module "media-and-accordion" path="./../modules/media-and-accordion" %}{% end_widget_block %}
+  {% widget_block module "quote-highlight" path="./../modules/quote-highlight" %}
+  {% end_widget_block %}
   
-  {% widget_block module "quote-highlight" path="./../modules/quote-highlight" %}{% end_widget_block %}
+  {% widget_block module "divider" path="./../modules/divider" %}
+  {% end_widget_block %}
   
-  {% widget_block module "divider" path="./../modules/divider" %}{% end_widget_block %}
+  {% widget_block module "page-links" path="./../modules/page-links" %}
+  {% end_widget_block %}
   
-  {% widget_block module "page-links" path="./../modules/page-links" %}{% end_widget_block %}
+  {% widget_block module "divider" path="./../modules/divider" %}
+  {% end_widget_block %}
   
-  {% widget_block module "divider" path="./../modules/divider" %}{% end_widget_block %}
+  {% widget_block module "quote" path="./../modules/quote" %}
+  {% end_widget_block %}
   
-  {% widget_block module "quote" path="./../modules/quote" %}{% end_widget_block %}
+  {% widget_block module "cta-banner" path="./../modules/cta-banner" %}
+  {% end_widget_block %}
   
-  {% widget_block module "cta-banner" path="./../modules/cta-banner" %}{% end_widget_block %}
   
-  
-  {% widget_block module "site-footer" path="./../modules/site-footer" %}{% end_widget_block %}    
+  {% widget_block module "site-footer" path="./../modules/site-footer" %}
+  {% end_widget_block %}    
 
   {% end_widget_container %}
 {% endblock body %}

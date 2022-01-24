@@ -6,7 +6,7 @@ const chalk = require("chalk");
 
 console.log(chalk.green(`Watching for sass changes`));
 
-glob(__dirname + "/sprigs-hs-theme/**/*.scss", {}, (err, files) => {
+glob(`${__dirname}${path.sep}sprigs-hs-theme${path.sep}**${path.sep}*.scss`, {}, (err, files) => {
   files.forEach((filePath) => {
     fs.watch(filePath, (event, filename) => {
       if (filename) {
@@ -18,9 +18,9 @@ glob(__dirname + "/sprigs-hs-theme/**/*.scss", {}, (err, files) => {
         };
         let modulePath = path.parse(filePath).dir;
         if (filename == 'global.scss') {
-          fs.writeFile(`${modulePath}/global.css`, result.css, callback);
+          fs.writeFile(`${modulePath}${path.sep}global.css`, result.css, callback);
         } else {
-          fs.writeFile(`${modulePath}/module.css`, result.css, callback);
+          fs.writeFile(`${modulePath}${path.sep}module.css`, result.css, callback);
         }
       }
     });

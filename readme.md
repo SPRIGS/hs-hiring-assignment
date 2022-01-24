@@ -1,22 +1,32 @@
 # SPRIGS_ Hubspot developer assignment
 
 ## Goal
-Implement the hubspot theme `sprigs-hs-theme` using the requirements below:
+The goal of this assignment is to implement the hubspot theme `sprigs-hs-theme` using HubSpots CLI and SCSS!
 
-- Install Hubspot CLI & setup Local development tools
+## Requirements
+
+Make sure the following requirements are installed on your system:
+- [Git](https://git-scm.com/downloads)
+- [Node.js](https://nodejs.org/en/download/)
+- Hubspot CLI
   - Read the hubspot official guide on [getting started](https://developers.hubspot.com/docs/cms/guides/getting-started) and how to set up [Local development CLI](https://developers.hubspot.com/docs/cms/developer-reference/local-development-cli)
-- Make sure the following requirements are installed on your system:
-  - Node.js v. >=10
-  - NPM
-  - @hubspot/cli
+
+- [VS Code](https://code.visualstudio.com/)
+- [HubSpot VS Code Extension](https://marketplace.visualstudio.com/items?itemName=HubSpot.hubl)
 
 ## Setting up
-Clone this repository using git clone, go inside projects directory and remove git
+Clone this repository, go inside projects directory and remove git
 ``` bash
 # Clone the repo and unlink the git account
 git clone https://github.com/SPRIGS/hs-hiring-assignment.git
 cd hs-hiring-assignment
+
+# Mac OS users:
 rm -rf .git
+
+# Windows users
+rmdir /s /q .git
+
 ```
 
 Install dependencies
@@ -26,7 +36,7 @@ npm install
 
 Make sure youre logged in to the right sandbox portal on your default browser. Then link the current project with your portal by running
 ```
-hs init 
+hs init
 ```
 and follow the steps there (refer to the getting started document above).
 
@@ -46,21 +56,17 @@ portals:
       <PERSONAL-ACCESS-KEY>
 ```
 
+Make sure that `defaultPortal` is set on the first line.
+
 Upload the theme to your SandBox portal running the command
 ``` bash
 hs upload sprigs-hs-theme sprigs-hs-theme
 ```
 
-Go to design-manager in your portal, and lock the theme folder, to avoid accidental editing:
+Go to design-manager in your portal and lock the theme folder to avoid accidental editing:
 
 [<img src="./sprigs-hs-theme/images/lock-theme-folder.gif" width="220">](lock-theme-folder.gif)
-
-
 ## Development
-
-Before you begin, using the following tools will make your life much easier:
-- [VS Code](https://code.visualstudio.com/)
-- [HubSpot VS Code Extension](https://marketplace.visualstudio.com/items?itemName=HubSpot.hubl)
 
 Once youre ready to start developing, you can run the command ```npm run watch``` which does two things:
 1. Watches for SCSS changes on theme files, and compiles them in the same directory.
@@ -82,8 +88,8 @@ All the modules are empty, exept for the `text and image` one, which you can del
 
 Refer to the figma file sent to your email and develop the modules.
 
-There is already a 'Home' template which has all the modules in order.
-
-Use [BEM](http://getbem.com/introduction/) for class names.
+There is already a 'Home' template which has all the modules listed.
 
 Figure out what styling is local (isolated per module) and what goes in the global css (`/sprigs-hs-theme/css/global.scss`)
+
+Use [BEM](http://getbem.com/introduction/) for class names.
